@@ -1,7 +1,16 @@
 
+from flask import Flask
 
-dic={}
-dic["test"]=1
-print dic["test"]
+class Person:
+    school= 'primary school'
 
-print [1,2,3]
+    def getSchool(self):
+        print self.school
+
+class Tech(Person):
+    school='high school'
+
+p=Person()
+q=Tech()
+p.getSchool()
+q.getSchool()
